@@ -1,0 +1,14 @@
+{
+  "contatos": [
+    {
+      "id": 1,
+      "nome": "Teste",
+      "email": "mauricio@gmail.com",
+      "telefone": "123",
+      "tipoContato": "Pessoal",
+      "preferenciaContato": "email",
+      "observacoes": "teste",
+      "confirmacao": true
+    }
+  ]
+}

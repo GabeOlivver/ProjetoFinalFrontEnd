@@ -3,11 +3,6 @@
         <div class="col-8 p-3 m-auto">
             <h1 class="text-center">Cadastro de contatos</h1>
             <form [formGroup]="formGroupContato">
-                <div class="mb-3 col-4">
-                    <label for="id" class="form-label">id</label>
-                    <input type="text" class="form-control" id="id" formControlName="id" />
-                </div>
-
                 <div class="mb-3">
                     <label for="name" class="form-label">nome</label>
                     <input type="text" class="form-control" id="nome" formControlName="nome" />
@@ -88,7 +83,7 @@
             <td>{{c.confirmacao}}</td>
             <td>{{c.observacoes}}</td>
             <td class="text-center">
-                <button class="btn btn-danger rounded-0 me-2">Remover</button>
+                <button class="btn btn-danger rounded-0 me-2" >Remover</button>
                 <button class="btn btn-outline-warning rounded-0">Alterar</button>
             </td>
           </tr>
