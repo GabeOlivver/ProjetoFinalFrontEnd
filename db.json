@@ -2,13 +2,13 @@
   "contatos": [
     {
       "id": 1,
-      "nome": "Teste",
+      "nome": "Mauriciu pedro kakiuchi de souza alencar gomes bertille",
       "email": "mauricio@gmail.com",
-      "telefone": "123",
+      "telefone": "1212",
       "tipoContato": "Pessoal",
-      "preferenciaContato": "email",
+      "preferenciaContato": "telefone",
       "observacoes": "teste",
-      "confirmacao": true
+      "confirmacao": false
     }
   ]
 }

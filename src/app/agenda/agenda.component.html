@@ -80,11 +80,11 @@
             <td>{{c.telefone}}</td>
             <td>{{c.tipoContato}}</td>
             <td>{{c.preferenciaContato}}</td>
-            <td>{{c.confirmacao}}</td>
+            <td>{{c.confirmacao ? 'Sim' : 'Não'}}</td>
             <td>{{c.observacoes}}</td>
             <td class="text-center">
-                <button class="btn btn-danger rounded-0 me-2" >Remover</button>
-                <button class="btn btn-outline-warning rounded-0">Alterar</button>
+                <button class="btn btn-danger rounded-0 me-2" (click)="delete(c)" >Remover</button>
+                <button class="btn btn-outline-warning rounded-0" (click)="edit(c)">Alterar</button>
             </td>
           </tr>
         </tbody>

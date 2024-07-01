@@ -39,7 +39,7 @@ export class AgendaComponent implements OnInit {
 
   save(){
     if(this.isEditing){
-      this.service.save(this.formGroupContato.value).subscribe({
+      this.service.update(this.formGroupContato.value).subscribe({
         next: () => {
           this.loadContatos();
           this.isEditing = false;
@@ -56,7 +56,7 @@ export class AgendaComponent implements OnInit {
     }
   }
 
-  delete(contato:Contato){
+  delete(contato: Contato){
     this.service.delete(contato).subscribe({
       next: () => this.loadContatos()
     })
