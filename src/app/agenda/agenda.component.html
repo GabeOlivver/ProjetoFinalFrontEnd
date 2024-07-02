@@ -3,6 +3,7 @@
         <div class="col-8 p-3 m-auto">
             <h1 class="text-center">Cadastro de contatos</h1>
             <form [formGroup]="formGroupContato">
+                
                 <div class="mb-3">
                     <label for="name" class="form-label">nome</label>
                     <input type="text" class="form-control" id="nome" formControlName="nome" />
@@ -22,10 +23,10 @@
 
                         <small 
                     class="text-danger"
-                    *ngIf="email.touched && nome.hasError('minlength')">* O email tem que ter no minimo 3 caracteres!</small>
+                    *ngIf="email.touched && email.hasError('minlength')">* O email tem que ter no minimo 3 caracteres!</small>
                     <small
                     class="text-danger"
-                    *ngIf="email.touched && nome.hasError('required')">* O email é requirido!</small>
+                    *ngIf="email.touched && email.hasError('required')">* O email é requirido!</small>
                     </div>
 
                     <div class="col mb-3">
@@ -33,10 +34,10 @@
                         <input type="text" class="form-control" id="telefone" formControlName="telefone" />
                         <small 
                     class="text-danger"
-                    *ngIf="telefone.touched && nome.hasError('minlength')">* O telefone tem que ter no minimo 3 caracteres!</small>
+                    *ngIf="telefone.touched && telefone.hasError('minlength')">* O telefone tem que ter no minimo 3 caracteres!</small>
                     <small
                     class="text-danger"
-                    *ngIf="telefone.touched && nome.hasError('required')">* O telefone é requirido!</small>
+                    *ngIf="telefone.touched && telefone.hasError('required')">* O telefone é requirido!</small>
                     </div>
                 </div>
 
@@ -49,7 +50,7 @@
                     </select>
                     <small
                     class="text-danger"
-                    *ngIf="tipoContato.touched && nome.hasError('required')">* Escolha o tipo de contato!</small>
+                    *ngIf="tipoContato.touched && tipoContato.hasError('required')">* Escolha o tipo de contato!</small>
                 </div>
 
                 <label class="form-label">preferencia de contato</label>
@@ -60,23 +61,25 @@
                     </label>
                     <small
                     class="text-danger"
-                    *ngIf="preferenciaContato.touched && nome.hasError('required')">* O Campo é obrigatório!</small>
+                    *ngIf="preferenciaContato.touched && preferenciaContato.hasError('required')">* O Campo é obrigatório!</small>
                 </div>
+                
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="preferenciaContato" id="flexRadioDefault2" value="telefone" formControlName="preferenciaContato" checked>
+                    <input class="form-check-input" type="radio" name="preferenciaContato" id="flexRadioDefault2" value="telefone" formControlName="preferenciaContato">
                     <label class="form-check-label" for="flexRadioDefault2">
                         telefone
                     </label>
                     <small
                     class="text-danger"
-                    *ngIf="preferenciaContato.touched && nome.hasError('required')">* O Campo é obrigatório!</small>
+                    *ngIf="preferenciaContato.touched && preferenciaContato.hasError('required')">* O Campo é obrigatório!</small>
                 </div>
+
                 <div class="mb-3">
                     <label for="observacoes" class="form-label">observações</label>
                     <input type="text" class="form-control" id="observacoes" formControlName="observacoes"/>
                     <small
                     class="text-danger"
-                    *ngIf="observacoes.touched && nome.hasError('required')">* O Campo é obrigatório!</small>
+                    *ngIf="observacoes.touched && observacoes.hasError('required')">* O Campo é obrigatório!</small>
                 </div>
 
                 <div class="form-check">
@@ -85,7 +88,7 @@
                         Favorito ?
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg mt-5" (click)="save()">Salvar</button>
+                <button type="submit" class="btn btn-primary btn-lg mt-5" (click)="save()" [disabled]="!formGroupContato.valid">Salvar</button>
             </form>
         </div>
     </div>

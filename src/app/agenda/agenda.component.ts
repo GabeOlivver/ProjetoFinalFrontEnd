@@ -31,7 +31,7 @@ export class AgendaComponent implements OnInit {
       email: ['',[Validators.minLength(3), Validators.required]],
       telefone: ['',[Validators.minLength(3), Validators.required]],
       tipoContato: ['', [Validators.required]],
-      preferenciaContato: ['', [Validators.required]],
+      preferenciaContato: ['email', [Validators.required]],
       observacoes: ['', [Validators.required]],
       confirmacao: ['']
     });
