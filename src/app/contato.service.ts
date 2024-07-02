@@ -8,7 +8,7 @@ import { Contato } from './contato';
 })
 export class ContatoService {
 
-  url = "http://localhost:3000/contatos";
+  url = "http://localhost:8080/agenda";
 
 
   constructor(private http: HttpClient) { }

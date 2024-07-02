@@ -1,27 +1,27 @@
-# ProjetoFinalFrontEnd
+# Projeto Final Disciplina de programação web: Agenda de contatos
+# Parte Front-End, desenvolvido em Angula CLI versão 17.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+## Pré-requisitos para rodar :  NodeJS - Versão LTS
+ npm package manager (já vem junto com a instalação do NodeJS)
 
-## Development server
+## Para instalar o Angular :  abra o terminal e digite : npm install -g @angular/cli
+- Para verificar se foi instalado digite ng v e se o resultado for uma imagem do angular CLI no terminal tudo certo !
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Para rodar o Front-End desta aplicação :
+- clone o repositório: https://github.com/GabeOlivver/ProjetoFinalFrontEnd
+- Navegue até a pasta PROJETOFINALFRONTEND em seu VS CODE
+- Abra o terminal e digite: ng s
+- Cole a porta que abrir em seu terminal e seu Front estará rodando!
+- vale lembrar que para as funções funcionarem voce vai precisar utilizar o backend,
+    disponivel em : https://github.com/GabeOlivver/projetoFinal-backEnd;
 
-## Code scaffolding
+## Funcionalidades:
+- AGENDA : No canto superior esquerdo há um botão com a AGENDA lá voce encontrará todas as funcionalidades do sistema 
+- CADASTRO : Cadastra um novo contato é simples, basta preencher os campos do formulário de maneira correta e clicar em 
+    salvar que seu contato será cadastrado na tabela a baixo;
+- EXCLUIR : Para excluir um contato basta clicar em REMOVER na parte de opções na tabela de contatos
+- ALTERAR : Para alterar um contato basta clicar em ALTERAR na parte de opções na tabela de contatos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Desenvolvido por : Gabriel Correa De Oliveira 
+### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
